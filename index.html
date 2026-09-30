@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-27XW8HTK9C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-27XW8HTK9C');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avenida é o seu lar em Elvas! Alojamento duplex com 3 quartos, 2 WC, sala de estar, sala de jantar e cozinha. Uma Família de Alentejanos com gosto em receber, na Av. da Piedade, em Elvas - Património Mundial da UNESCO.">
+    <meta property="og:title" content="Avenida Elvas - Alojamento Local - Just Like Home">
+    <meta property="og:description" content="Avenida é o seu lar em Elvas! Alojamento duplex com 3 quartos, 2 WC, sala de estar, sala de jantar e cozinha. Uma Família de Alentejanos com gosto em receber, na Av. da Piedade, em Elvas - Património Mundial da UNESCO.">
+    <title>Avenida Elvas - Alojamento Local - Just Like Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap"></noscript>
+    <style>
+        :root {
+            --terracotta: #C85C3F;
+            --cream: #F7F3E9;
+            --deep-green: #2C4A3C;
+            --gold: #D4AF37;
+            --warm-white: #FFFBF5;
+            --stone: #8B7355;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Text', serif;
+            background: var(--cream);
+            color: var(--deep-green);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(135deg, var(--terracotta) 0%, var(--deep-green) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(0, 0, 0, 0.1) 0%, transparent 50%);
+            animation: breathe 8s ease-in-out infinite;
+        }
+
+        @keyframes breathe {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        .hero-content {
+            position: relative;
+            text-align: center;
+            color: var(--warm-white);
+            z-index: 2;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .hero-logo {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 2rem;
+            filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 8vw, 7rem);
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            line-height: 1.1;
+        }
+
+        .tagline {
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            font-style: italic;
+            letter-spacing: 0.15em;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+            font-family: 'Crimson Text', serif;
+            animation: fadeInUp 1.2s ease-out 0.2s backwards;
+        }
+
+        .hero .subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.8rem);
+            font-style: italic;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            opacity: 0.95;
+            animation: fadeInUp 1.2s ease-out 0.4s backwards;
+        }
+
+        .hero .address {
+            font-size: clamp(0.9rem, 2vw, 1.2rem);
+            letter-spacing: 0.05em;
+            opacity: 0.9;
+            animation: fadeInUp 1.2s ease-out 0.5s backwards;
+        }
+
+        .divider {
+            width: 100px;
+            height: 2px;
+            background: var(--gold);
+            margin: 0 auto 1.5rem;
+            animation: fadeInUp 1.2s ease-out 0.3s backwards;
+        }
+
+        .booking-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.85rem 2.5rem;
+            background: #003580;
+            color: #fff;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-decoration: none;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            animation: fadeInUp 1.2s ease-out 0.6s backwards;
+            border: 2px solid #0071c2;
+        }
+
+        .booking-btn:hover {
+            background: #0071c2;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0,53,128,0.5);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        .scroll-indicator::after {
+            content: '↓';
+            font-size: 2rem;
+            color: var(--warm-white);
+            opacity: 0.7;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            color: var(--terracotta);
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60%;
+            height: 3px;
+            background: var(--gold);
+        }
+
+        .intro {
+            background: var(--warm-white);
+            padding: 3rem 0;
+        }
+
+        .intro-text {
+            font-size: 1.25rem;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: justify;
+            line-height: 1.65;
+        }
+
+        .intro-text strong {
+            color: var(--terracotta);
+            font-weight: 600;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background: var(--warm-white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, var(--terracotta), var(--stone));
+            padding: 2rem;
+            color: var(--warm-white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: shimmer 6s linear infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .card-header h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        .card-header .icon {
+            font-size: 3rem;
+            opacity: 0.3;
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .card-body {
+            padding: 2rem;
+        }
+
+        .locais-intro-banner {
+            background: linear-gradient(135deg, var(--deep-green) 0%, #1a3028 100%);
+            border-radius: 10px;
+            padding: 2.5rem 3rem;
+            margin-bottom: 2.5rem;
+            color: var(--warm-white);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        .locais-intro-banner::before {
+            content: '🌍';
+            position: absolute;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 6rem;
+            opacity: 0.08;
+            line-height: 1;
+        }
+
+        .locais-intro-banner h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            color: var(--gold);
+            margin-bottom: 1.2rem;
+            letter-spacing: 0.02em;
+        }
+
+        .locais-intro-banner p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            opacity: 0.92;
+            margin-bottom: 0.8rem;
+            text-align: justify;
+        }
+
+        .locais-intro-banner p:last-child {
+            margin-bottom: 0;
+        }
+
+        .locais-intro-banner strong {
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        .establishment {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(200, 92, 63, 0.1);
+        }
+
+        .establishment:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .establishment h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--terracotta);
+            margin-bottom: 0.5rem;
+        }
+
+        .establishment p {
+            font-size: 1.05rem;
+            color: var(--deep-green);
+            margin-bottom: 0.8rem;
+            opacity: 0.9;
+        }
+
+        .establishment .highlight {
+            background: linear-gradient(120deg, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0.05) 100%);
+            padding: 0.8rem 1rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            font-style: italic;
+            margin-bottom: 0.8rem;
+            border-left: 3px solid var(--gold);
+        }
+
+        .establishment a {
+            color: var(--terracotta);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .establishment a:hover {
+            color: var(--deep-green);
+            transform: translateX(5px);
+        }
+
+        .establishment a::after {
+            content: ' →';
+            margin-left: 0.5rem;
+        }
+
+        .summer {
+            background: linear-gradient(135deg, #1a3a5c 0%, #0d2b45 100%);
+            color: var(--warm-white);
+            padding: 5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .summer::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: radial-gradient(circle at 10% 20%, rgba(100, 200, 255, 0.05) 0%, transparent 50%),
+                              radial-gradient(circle at 90% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+        }
+
+        .summer .section-title {
+            color: #64c8ff;
+        }
+
+        .summer .section-title::after {
+            background: var(--gold);
+        }
+
+        .summer-intro {
+            font-size: 1.2rem;
+            opacity: 0.85;
+            margin-bottom: 2.5rem;
+            font-style: italic;
+        }
+
+        .summer-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .summer .excursion-card {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .summer .excursion-card:hover {
+            border-color: #64c8ff;
+        }
+
+        .summer .excursion-card h3 {
+            color: #64c8ff;
+            font-size: 1.4rem;
+        }
+
+        .excursions {
+            background: var(--deep-green);
+            color: var(--warm-white);
+            padding: 5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .excursions::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(30deg, rgba(212, 175, 55, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(212, 175, 55, 0.03) 87.5%, rgba(212, 175, 55, 0.03)),
+                linear-gradient(150deg, rgba(212, 175, 55, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(212, 175, 55, 0.03) 87.5%, rgba(212, 175, 55, 0.03));
+            background-size: 80px 140px;
+            opacity: 0.3;
+        }
+
+        .excursions .section-title {
+            color: var(--gold);
+        }
+
+        .excursion-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 2.5rem;
+            transition: all 0.4s ease;
+        }
+
+        .excursion-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--gold);
+            transform: scale(1.02);
+        }
+
+        .excursion-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .excursion-card .distance {
+            font-size: 1.1rem;
+            opacity: 0.7;
+            margin-bottom: 1rem;
+        }
+
+        .parking {
+            background: var(--warm-white);
+            padding: 4rem 0;
+        }
+
+        .parking-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .parking-item {
+            background: linear-gradient(135deg, var(--cream) 0%, var(--warm-white) 100%);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .parking-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--terracotta), var(--gold));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .parking-item:hover::before {
+            transform: scaleX(1);
+        }
+
+        .parking-item:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .parking-item h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--terracotta);
+            margin-bottom: 0.5rem;
+        }
+
+        .parking-item .tag {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            background: var(--deep-green);
+            color: var(--warm-white);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+        }
+
+        .footer {
+            background: var(--deep-green);
+            color: var(--warm-white);
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        .footer .gold-text {
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 3rem 1.5rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .card-header .icon {
+                display: none;
+            }
+        }
+
+        /* ── STICKY NAV ── */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(44, 74, 60, 0.97);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.25);
+        }
+
+        .top-nav-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .top-nav-inner::-webkit-scrollbar { display: none; }
+
+        .top-nav-brand {
+            font-family: 'Playfair Display', serif;
+            color: var(--gold);
+            font-size: 1.05rem;
+            font-weight: 700;
+            white-space: nowrap;
+            padding: 1rem 1rem 1rem 0;
+            margin-right: 0.5rem;
+            border-right: 1px solid rgba(255,255,255,0.15);
+            flex-shrink: 0;
+            text-decoration: none !important;
+            border-bottom: 2px solid transparent !important;
+        }
+
+        .top-nav-brand:hover {
+            color: var(--gold) !important;
+            opacity: 0.85;
+            border-bottom-color: transparent !important;
+        }
+
+        .top-nav a {
+            color: rgba(255, 251, 245, 0.85);
+            text-decoration: none;
+            font-family: 'Crimson Text', serif;
+            font-size: 1rem;
+            white-space: nowrap;
+            padding: 1rem 0.75rem;
+            flex-shrink: 0;
+            transition: color 0.2s ease;
+            border-bottom: 2px solid transparent;
+        }
+
+        .top-nav a:hover {
+            color: var(--gold);
+            border-bottom-color: var(--gold);
+        }
+
+        @media (max-width: 768px) {
+            .top-nav-brand { display: block; font-size: 0.95rem; padding: 0.85rem 0.6rem 0.85rem 0; }
+            .top-nav a { font-size: 0.9rem; padding: 0.85rem 0.6rem; }
+        }
+
+        /* ── LANGUAGE SELECTOR ── */
+        .lang-selector {
+            position: fixed;
+            top: 48px;
+            right: 1rem;
+            z-index: 1100;
+            display: flex;
+            gap: 2px;
+            background: rgba(139, 115, 85, 0.95);
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            border-top: none;
+            border-radius: 0 0 20px 20px;
+            padding: 4px 5px 5px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: none;
+            color: rgba(255,251,245,0.8);
+            font-family: 'Crimson Text', serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            padding: 0.22rem 0.55rem;
+            border-radius: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            line-height: 1;
+        }
+
+        .lang-btn:hover {
+            color: #fff;
+            background: rgba(255,255,255,0.12);
+        }
+
+        .lang-btn.active {
+            background: var(--gold);
+            color: var(--deep-green);
+        }
+
+        @media (max-width: 768px) {
+            .lang-selector { top: 42px; right: 0.75rem; }
+            .lang-btn { font-size: 0.75rem; padding: 0.2rem 0.5rem; }
+        }
+
+        /* ── SECÇÃO ALOJAMENTO ── */
+        .alojamento-section {
+            background: var(--warm-white);
+            padding: 5rem 0;
+            border-bottom: 3px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .alojamento-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+            margin-top: 3rem;
+        }
+
+        .alojamento-desc {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            margin-bottom: 2rem;
+            color: var(--deep-green);
+        }
+
+        .alojamento-desc strong {
+            color: var(--terracotta);
+        }
+
+        .alojamento-features {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem 1.2rem;
+            background: var(--cream);
+            border-radius: 8px;
+            border-left: 3px solid var(--gold);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateX(4px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+        }
+
+        .feature-icon {
+            font-size: 1.8rem;
+            flex-shrink: 0;
+            line-height: 1;
+        }
+
+        .feature-item strong {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            color: var(--terracotta);
+            display: block;
+            margin-bottom: 0.2rem;
+        }
+
+        .feature-item p {
+            font-size: 0.95rem;
+            color: var(--stone);
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* Galeria */
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.6rem;
+            margin-top: 2rem;
+        }
+
+        .galeria-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            background: var(--cream);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+
+        .galeria-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .galeria-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Imagem principal — largura total, proporção 16:9 */
+        .galeria-main {
+            grid-column: 1 / -1;
+            aspect-ratio: 16/9;
+        }
+
+        /* Horizontais — proporção 3:2 */
+        .galeria-h {
+            aspect-ratio: 3/2;
+        }
+
+        /* Verticais — proporção 2:3 */
+        .galeria-v {
+            aspect-ratio: 2/3;
+            grid-row: span 2;
+        }
+
+        /* Placeholder quando imagem não existe */
+        .galeria-item.img-placeholder {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .galeria-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .galeria-v {
+                grid-row: span 1;
+                aspect-ratio: 3/2;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .galeria-grid {
+                grid-template-columns: 1fr;
+            }
+            .galeria-main { aspect-ratio: 4/3; }
+        }
+
+        /* ── FIM ALOJAMENTO ── */
+
+            opacity: 0;
+            animation: fadeInStagger 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeInStagger {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .card:nth-child(1) { animation-delay: 0.1s; }
+        .card:nth-child(2) { animation-delay: 0.2s; }
+        .card:nth-child(3) { animation-delay: 0.3s; }
+        .card:nth-child(4) { animation-delay: 0.4s; }
+        .card:nth-child(5) { animation-delay: 0.5s; }
+        .card:nth-child(6) { animation-delay: 0.6s; }
+    </style>
+</head>
+<body>
+    <!-- LANGUAGE SELECTOR (floating, fixed) -->
+    <div class="lang-selector">
+        <button class="lang-btn active" onclick="setLang('pt')">PT</button>
+        <button class="lang-btn" onclick="setLang('es')">ES</button>
+        <button class="lang-btn" onclick="setLang('en')">EN</button>
+    </div>
+
+    <nav class="top-nav" id="topNav">
+        <div class="top-nav-inner">
+            <a href="#" class="top-nav-brand" style="text-decoration:none;">AVENIDA</a>
+            <a href="#sec-pastelarias" data-i18n="nav-pastelarias">🥐 Pastelarias</a>
+            <a href="#sec-restaurantes" data-i18n="nav-restaurantes">🍴 Restaurantes</a>
+            <a href="#sec-passeios" data-i18n="nav-passeios">🗺️ Passeios</a>
+            <a href="#sec-estacionamento" data-i18n="nav-estacionamento">🅿️ Estacionamento</a>
+            <a href="#sec-locais" data-i18n="nav-locais">🏰 Locais de Interesse</a>
+            <a href="#sec-verao" data-i18n="nav-verao">☀️ Verão</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <img src="ValadasTrinidad Icone_PNG.png" alt="Avenida Logo" class="hero-logo" fetchpriority="high">
+            <h1>AVENIDA</h1>
+            <p class="tagline">Just Like Home</p>
+            <div class="divider"></div>
+            <p class="subtitle" data-i18n="hero-subtitle">Alojamento Local em Elvas</p>
+            <p class="address">
+                <a href="https://maps.app.goo.gl/qJT14pshDuG9WmQv8" target="_blank" 
+       style="color: white;">
+        Avenida da Piedade, 58 - B, Elvas
+                </a>
+            </p>
+            <a href="https://www.booking.com/hotel/pt/avenida-elvas.pt-pt.html" target="_blank" class="booking-btn" data-i18n="booking-btn">Reserva Já</a>
+        </div>
+        <div class="scroll-indicator"></div>
+    </div>
+
+    <div class="intro">
+        <div class="container">
+            <p class="intro-text" data-i18n="intro-text">
+                O <strong>Avenida</strong> é o seu lar em Elvas, a cidade-forte mais representativa da escola de fortificação abaluartada europeia. 
+                Estrategicamente localizado na Avenida da Piedade , oferecemos-lhe acesso privilegiado ao <strong>Património Mundial da UNESCO</strong>, 
+                ao maior aqueduto da Península Ibérica, e à autêntica gastronomia alentejana. 
+                Descubra Elvas com o conforto de se sentir em casa.
+            </p>
+        </div>
+    </div>
+
+    <!-- SECÇÃO DO ALOJAMENTO -->
+    <div class="alojamento-section" id="sec-alojamento">
+        <div class="container">
+            <h2 class="section-title" data-i18n="sec-alojamento-title">O Espaço</h2>
+
+            <div class="galeria-grid">
+                <!-- Imagem principal -->
+                <div class="galeria-item galeria-main">
+                    <img src="IMAGEM_1.webp" alt="Avenida - Vista principal">
+                </div>
+
+                <!-- Linha 1: H H V H -->
+                <div class="galeria-item galeria-h">
+                    <img src="IMAGEM_2.webp" alt="Avenida">
+                </div>
+                <div class="galeria-item galeria-h">
+                    <img src="IMAGEM_3.webp" alt="Avenida">
+                </div>
+                <div class="galeria-item galeria-v">
+                    <img src="IMAGEM_4.webp" alt="Avenida">
+                </div>
+                <div class="galeria-item galeria-h">
+                    <img src="IMAGEM_5.webp" alt="Avenida">
+                </div>
+
+                <!-- Linha 2: H H H (a vertical já ocupa 2 linhas) -->
+                <div class="galeria-item galeria-h">
+                    <img src="IMAGEM_6.webp" alt="Avenida">
+                </div>
+                <div class="galeria-item galeria-h">
+                    <img src="IMAGEM_7.webp" alt="Avenida">
+                </div>
+                <div class="galeria-item galeria-h">
+                    <img src="IMAGEM_8.webp" alt="Avenida">
+                </div>
+
+                <!-- Linha 3: V H H H -->
+                <div class="galeria-item galeria-v">
+                    <img src="IMAGEM_9.webp" alt="Avenida">
+                </div>
+                <div class="galeria-item galeria-h">
+                    <img src="IMAGEM_10.webp" alt="Avenida">
+                </div>
+                <div class="galeria-item galeria-h">
+                    <img src="IMAGEM_11.webp" alt="Avenida">
+                </div>
+                <div class="galeria-item galeria-h">
+                    <img src="IMAGEM_12.webp" alt="Avenida">
+                </div>
+
+                <!-- Linhas finais: H V H H / H _ H H -->
+                <div class="galeria-item galeria-h">
+                    <img src="IMAGEM_13.webp" alt="Avenida">
+                </div>
+                <div class="galeria-item galeria-v">
+                    <img src="IMAGEM_14.webp" alt="Avenida">
+                </div>
+                <div class="galeria-item galeria-h">
+                    <img src="IMAGEM_15.webp" alt="Avenida">
+                </div>
+                <div class="galeria-item galeria-h">
+                    <img src="IMAGEM_16.webp" alt="Avenida">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="sec-pastelarias">
+        <h2 class="section-title" data-i18n="sec-pastelarias-title">Pastelarias & Doçaria</h2>
+        <div class="grid" id="grid-pastelarias"></div>
+    </div>
+
+    <div class="container" id="sec-restaurantes">
+        <h2 class="section-title" data-i18n="sec-restaurantes-title">Restaurantes</h2>
+        <div class="grid" id="grid-restaurantes"></div>
+
+        <h2 class="section-title" id="sec-arredores" style="margin-top: 5rem;" data-i18n="sec-arredores-title">Arredores de Elvas</h2>
+        <div class="grid" id="grid-arredores"></div>
+    </div>
+
+    <div class="excursions" id="sec-passeios">
+        <div class="container">
+            <h2 class="section-title" data-i18n="sec-passeios-title">Sugestões de Passeios</h2>
+            <div class="grid" id="grid-passeios"></div>
+        </div>
+    </div>
+
+    <div class="parking" id="sec-estacionamento">
+        <div class="container">
+            <h2 class="section-title" data-i18n="sec-estacionamento-title">Estacionamento</h2>
+            <div class="parking-grid" id="grid-estacionamento"></div>
+        </div>
+    </div>
+
+    <div class="container" id="sec-locais" style="padding: 5rem 2rem;">
+        <h2 class="section-title" data-i18n="sec-locais-title">Locais de Interesse</h2>
+        <div id="locais-intro-wrapper"></div>
+        <div class="grid" id="grid-locais"></div>
+    </div>
+
+    </div>
+
+    <div class="summer" id="sec-verao">
+        <div class="container">
+            <h2 class="section-title" data-i18n="sec-verao-title">☀️ Se o Tempo Permitir...</h2>
+            <p class="summer-intro" data-i18n="sec-verao-intro">Nos dias quentes do verão, aproveite para refrescar-se nas piscinas e praias fluviais da região.</p>
+
+            <h3 class="summer-subtitle" data-i18n="sec-verao-em-elvas">Em Elvas</h3>
+            <div class="grid" id="grid-verao-elvas"></div>
+
+            <h3 class="summer-subtitle" style="margin-top: 3rem;" data-i18n="sec-verao-na-regiao">Na Região</h3>
+            <div class="grid" id="grid-verao-regiao"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p><span class="gold-text">Avenida</span> • Just Like Home</p>
+            <p style="margin-top: 0.5rem;">Avenida da Piedade 58 - B, Elvas</p>
+            <p style="margin-top: 1rem; font-size: 0.95rem;" data-i18n="footer-desc">Descubra Elvas • Património Mundial da UNESCO • Alentejo • Portugal</p>
+        </div>
+    </div>
+    <script>
+    // ══════════════════════════════════════════════
+    // CONTENT DATA — all translatable card content
+    // ══════════════════════════════════════════════
+    const cardData = {
+        pastelarias: {
+            pt: [
+                { icon:'🥐', name:'A Paloma', body:`<p>Ideal para tomar o pequeno-almoço, a um quarteirão da Avenida.</p><div class="highlight">Pastelaria de fabrico próprio, excelente pequeno-almoço e o autêntico Pastel de Nata (Belém)</div><a href="https://maps.app.goo.gl/qsu3bFemHW9hZP6h6" target="_blank">Ver localização</a>` },
+                { icon:'☕', name:'Coffee Time Aqueduto', body:`<p>Ideal para o pequeno-almoço ou refeição ligeira, com vista para o Aqueduto da Amoreira.</p><div class="highlight">Pastelaria portuguesa com foco nos croissants e crepes</div><a href="https://maps.app.goo.gl/uN8UFVRr51kXqbVXA" target="_blank">Ver localização</a>` },
+                { icon:'🍰', name:'Pastelaria Canhão', body:`<p>Especialidade única e imperdível!</p><div class="highlight">Único Sericaia confeccionado em forno de lenha. Take-away exclusivo - recomendável ligar antecipadamente</div><a href="https://maps.app.goo.gl/PhMYZ9bLaDFK55ZD8" target="_blank">Ver localização</a>` },
+            ],
+            es: [
+                { icon:'🥐', name:'A Paloma', body:`<p>Ideal para el desayuno, a una manzana del Avenida.</p><div class="highlight">Pastelería de fabricación propia, excelente desayuno y el auténtico Pastel de Nata (Belém)</div><a href="https://maps.app.goo.gl/qsu3bFemHW9hZP6h6" target="_blank">Ver ubicación</a>` },
+                { icon:'☕', name:'Coffee Time Aqueduto', body:`<p>Ideal para el desayuno o comida ligera, con vistas al Acueducto de Amoreira.</p><div class="highlight">Pastelería portuguesa centrada en cruasanes y crepes</div><a href="https://maps.app.goo.gl/uN8UFVRr51kXqbVXA" target="_blank">Ver ubicación</a>` },
+                { icon:'🍰', name:'Pastelaria Canhão', body:`<p>¡Especialidad única e imprescindible!</p><div class="highlight">Único Sericaia elaborado en horno de leña. Solo para llevar — se recomienda llamar con antelación</div><a href="https://maps.app.goo.gl/PhMYZ9bLaDFK55ZD8" target="_blank">Ver ubicación</a>` },
+            ],
+            en: [
+                { icon:'🥐', name:'A Paloma', body:`<p>Perfect for breakfast, just around the corner from Avenida.</p><div class="highlight">House-made pastries, excellent breakfast and the authentic Pastel de Nata (Belém)</div><a href="https://maps.app.goo.gl/qsu3bFemHW9hZP6h6" target="_blank">View location</a>` },
+                { icon:'☕', name:'Coffee Time Aqueduto', body:`<p>Perfect for breakfast or a light bite, with views of the Amoreira Aqueduct.</p><div class="highlight">Portuguese bakery specializing in croissants and crepes</div><a href="https://maps.app.goo.gl/uN8UFVRr51kXqbVXA" target="_blank">View location</a>` },
+                { icon:'🍰', name:'Pastelaria Canhão', body:`<p>A unique and unmissable specialty!</p><div class="highlight">The only Sericaia baked in a wood-fired oven. Takeaway only — call ahead recommended</div><a href="https://maps.app.goo.gl/PhMYZ9bLaDFK55ZD8" target="_blank">View location</a>` },
+            ],
+        },
+        restaurantes: {
+            pt: [
+                { icon:'🍷', name:'Adega Regional', body:`<p>Restaurante que serve cozinha tradicional alentejana sob tetos abobadados do século XVII.</p><div class="highlight">Comida tradicional em restaurante de qualidade</div><a href="https://maps.app.goo.gl/AAxRjzvj77g1YKQY9" target="_blank">Ver localização</a>` },
+                { icon:'🍴', name:'Recanto de São Paulo', body:`<p>Localizado junto ao Mercado Municipal Casa das Barcas, com base na rica culinária regional.</p><div class="highlight">Comida tradicional em restaurante de qualidade</div><a href="https://maps.app.goo.gl/p9DtnX2PUveSndgH6" target="_blank">Ver localização</a>` },
+                { icon:'🌅', name:'Alcalá Restaurant & Sky Lounge', body:`<p>Terraço moderno com vistas privilegiadas para o Aqueduto da Amoreira.</p><div class="highlight">Comida moderna em restaurante de qualidade</div><a href="https://maps.app.goo.gl/cjtpBZ38KE9sYZCs8" target="_blank">Ver localização</a>` },
+                { icon:'🍕', name:'Nonna Bia', body:`<p>Pratos especiais mensais inspirados nos ingredientes da época e nas famosas pizzarias napolitanas.</p><div class="highlight">Comida italiana em restaurante de qualidade</div><a href="https://maps.app.goo.gl/9Y2PNfJSx2SJSsok7" target="_blank">Ver localização</a>` },
+                { icon:'✨', name:'Acontece', body:`<p>Restaurante de autor com experiências únicas, esplanada atraente e decoração contemporânea.</p><div class="highlight">Comida sofisticada em restaurante de design</div><a href="https://maps.app.goo.gl/ZirRh4D5CvKBKJzS8" target="_blank">Ver localização</a>` },
+                { icon:'🦞', name:'El Cristo', body:`<div class="highlight">Considerada uma das melhores marisqueiras de Portugal</div><a href="https://maps.app.goo.gl/BG4AJFB3dG87wkAc8" target="_blank">Ver localização</a>` },
+                { icon:'🛣️', name:'Vinha da Amada', body:`<div class="highlight">Comida Tradicional em Restaurante de Estrada</div><a href="https://maps.app.goo.gl/oCrcCCVyam6X6ZXr9" target="_blank">Ver localização</a>` },
+            ],
+            es: [
+                { icon:'🍷', name:'Adega Regional', body:`<p>Restaurante de cocina tradicional alentejana bajo bóvedas del siglo XVII.</p><div class="highlight">Comida tradicional en restaurante de calidad</div><a href="https://maps.app.goo.gl/AAxRjzvj77g1YKQY9" target="_blank">Ver ubicación</a>` },
+                { icon:'🍴', name:'Recanto de São Paulo', body:`<p>Junto al Mercado Municipal Casa das Barcas, basado en la rica cocina regional.</p><div class="highlight">Comida tradicional en restaurante de calidad</div><a href="https://maps.app.goo.gl/p9DtnX2PUveSndgH6" target="_blank">Ver ubicación</a>` },
+                { icon:'🌅', name:'Alcalá Restaurant & Sky Lounge', body:`<p>Terraza moderna con vistas privilegiadas al Acueducto de Amoreira.</p><div class="highlight">Comida moderna en restaurante de calidad</div><a href="https://maps.app.goo.gl/cjtpBZ38KE9sYZCs8" target="_blank">Ver ubicación</a>` },
+                { icon:'🍕', name:'Nonna Bia', body:`<p>Platos especiales mensuales inspirados en ingredientes de temporada y las famosas pizzerías napolitanas.</p><div class="highlight">Comida italiana en restaurante de calidad</div><a href="https://maps.app.goo.gl/9Y2PNfJSx2SJSsok7" target="_blank">Ver ubicación</a>` },
+                { icon:'✨', name:'Acontece', body:`<p>Restaurante de autor con experiencias únicas, terraza acogedora y decoración contemporánea.</p><div class="highlight">Comida sofisticada en restaurante de diseño</div><a href="https://maps.app.goo.gl/ZirRh4D5CvKBKJzS8" target="_blank">Ver ubicación</a>` },
+                { icon:'🦞', name:'El Cristo', body:`<div class="highlight">Considerada una de las mejores marisquerías de Portugal</div><a href="https://maps.app.goo.gl/BG4AJFB3dG87wkAc8" target="_blank">Ver ubicación</a>` },
+                { icon:'🛣️', name:'Vinha da Amada', body:`<div class="highlight">Comida Tradicional en Restaurante de Carretera</div><a href="https://maps.app.goo.gl/oCrcCCVyam6X6ZXr9" target="_blank">Ver ubicación</a>` },
+            ],
+            en: [
+                { icon:'🍷', name:'Adega Regional', body:`<p>Serves traditional Alentejo cuisine under 17th-century vaulted ceilings.</p><div class="highlight">Traditional food in a quality restaurant</div><a href="https://maps.app.goo.gl/AAxRjzvj77g1YKQY9" target="_blank">View location</a>` },
+                { icon:'🍴', name:'Recanto de São Paulo', body:`<p>Located next to the Casa das Barcas Municipal Market, rooted in rich regional cuisine.</p><div class="highlight">Traditional food in a quality restaurant</div><a href="https://maps.app.goo.gl/p9DtnX2PUveSndgH6" target="_blank">View location</a>` },
+                { icon:'🌅', name:'Alcalá Restaurant & Sky Lounge', body:`<p>Modern rooftop terrace with stunning views of the Amoreira Aqueduct.</p><div class="highlight">Contemporary food in a quality restaurant</div><a href="https://maps.app.goo.gl/cjtpBZ38KE9sYZCs8" target="_blank">View location</a>` },
+                { icon:'🍕', name:'Nonna Bia', body:`<p>Monthly specials inspired by seasonal ingredients and the famous Neapolitan pizzerias.</p><div class="highlight">Italian food in a quality restaurant</div><a href="https://maps.app.goo.gl/9Y2PNfJSx2SJSsok7" target="_blank">View location</a>` },
+                { icon:'✨', name:'Acontece', body:`<p>Signature restaurant with unique experiences, a charming terrace and contemporary décor.</p><div class="highlight">Sophisticated food in a design restaurant</div><a href="https://maps.app.goo.gl/ZirRh4D5CvKBKJzS8" target="_blank">View location</a>` },
+                { icon:'🦞', name:'El Cristo', body:`<div class="highlight">Regarded as one of the best seafood restaurants in Portugal</div><a href="https://maps.app.goo.gl/BG4AJFB3dG87wkAc8" target="_blank">View location</a>` },
+                { icon:'🛣️', name:'Vinha da Amada', body:`<div class="highlight">Traditional Food at a Roadside Restaurant</div><a href="https://maps.app.goo.gl/oCrcCCVyam6X6ZXr9" target="_blank">View location</a>` },
+            ],
+        },
+        arredores: {
+            pt: [
+                { icon:'🏘️', name:'Pata Larga - Juromenha', body:`<div class="highlight">Comida caseira com atendimento intimista em restaurante de aldeia</div><a href="https://maps.app.goo.gl/haaz7ZyQcu31Ew5TA" target="_blank">Ver localização</a>` },
+                { icon:'🦌', name:'Pompílio - São Vicente', body:`<div class="highlight">Comida tradicional e caça em restaurante de qualidade</div><a href="https://maps.app.goo.gl/KyPXyzrC2uzFQxiS6" target="_blank">Ver localização</a>` },
+                { icon:'🍳', name:'O Canto - Vila Boim', body:`<div class="highlight">Comida Tradicional em Restaurante Tradicional</div><a href="https://maps.app.goo.gl/ootVSLChSgTpC9TA7" target="_blank">Ver localização</a>` },
+                { icon:'🍲', name:'Taberna do Adro - Vila Fernando', body:`<div class="highlight">Comida Tradicional em Restaurante (Casa de Pasto) Típico</div><a href="https://maps.app.goo.gl/rpT2kUdJfz41usAx5" target="_blank">Ver localização</a>` },
+            ],
+            es: [
+                { icon:'🏘️', name:'Pata Larga - Juromenha', body:`<div class="highlight">Comida casera con trato íntimo en restaurante de aldea</div><a href="https://maps.app.goo.gl/haaz7ZyQcu31Ew5TA" target="_blank">Ver ubicación</a>` },
+                { icon:'🦌', name:'Pompílio - São Vicente', body:`<div class="highlight">Comida tradicional y caza en restaurante de calidad</div><a href="https://maps.app.goo.gl/KyPXyzrC2uzFQxiS6" target="_blank">Ver ubicación</a>` },
+                { icon:'🍳', name:'O Canto - Vila Boim', body:`<div class="highlight">Comida Tradicional en Restaurante Tradicional</div><a href="https://maps.app.goo.gl/ootVSLChSgTpC9TA7" target="_blank">Ver ubicación</a>` },
+                { icon:'🍲', name:'Taberna do Adro - Vila Fernando', body:`<div class="highlight">Comida Tradicional en Taberna Típica</div><a href="https://maps.app.goo.gl/rpT2kUdJfz41usAx5" target="_blank">Ver ubicación</a>` },
+            ],
+            en: [
+                { icon:'🏘️', name:'Pata Larga - Juromenha', body:`<div class="highlight">Home cooking with intimate service in a village restaurant</div><a href="https://maps.app.goo.gl/haaz7ZyQcu31Ew5TA" target="_blank">View location</a>` },
+                { icon:'🦌', name:'Pompílio - São Vicente', body:`<div class="highlight">Traditional cuisine and game in a quality restaurant</div><a href="https://maps.app.goo.gl/KyPXyzrC2uzFQxiS6" target="_blank">View location</a>` },
+                { icon:'🍳', name:'O Canto - Vila Boim', body:`<div class="highlight">Traditional Food in a Traditional Restaurant</div><a href="https://maps.app.goo.gl/ootVSLChSgTpC9TA7" target="_blank">View location</a>` },
+                { icon:'🍲', name:'Taberna do Adro - Vila Fernando', body:`<div class="highlight">Traditional Food at a Typical Tavern</div><a href="https://maps.app.goo.gl/rpT2kUdJfz41usAx5" target="_blank">View location</a>` },
+            ],
+        },
+        passeios: {
+            pt: [
+                { name:'Juromenha', dist:'📍 17,5 km de Elvas', desc:'Aldeia medieval com castelo e miradouro privilegiado para Espanha e o Rio Guadiana. Uma viagem ao passado medieval português.', url:'https://goo.gl/maps/qBAVeHE31rmzyApH8', link:'Ver localização →' },
+                { name:'Monsaraz', dist:'📍 69,7 km de Elvas', desc:'Aldeia medieval em perfeito estado de conservação, com miradouro espetacular para o espelho de água da Barragem do Alqueva.', url:'https://goo.gl/maps/MWw1fFQdjqAVAfJA8', link:'Ver localização →' },
+                { name:'Marvão', dist:'📍 77,3 km de Elvas', desc:'Vila abaluartada raiana com castelo, ruas estreitas e vistas absolutamente deslumbrantes sobre a serra e fronteira.', url:'https://goo.gl/maps/dFBbMRT32pqMB9po7', link:'Ver localização →' },
+            ],
+            es: [
+                { name:'Juromenha', dist:'📍 17,5 km de Elvas', desc:'Aldea medieval con castillo y mirador privilegiado hacia España y el Río Guadiana. Un viaje al pasado medieval portugués.', url:'https://goo.gl/maps/qBAVeHE31rmzyApH8', link:'Ver ubicación →' },
+                { name:'Monsaraz', dist:'📍 69,7 km de Elvas', desc:'Aldea medieval en perfecto estado de conservación, con mirador espectacular al embalse de Alqueva.', url:'https://goo.gl/maps/MWw1fFQdjqAVAfJA8', link:'Ver ubicación →' },
+                { name:'Marvão', dist:'📍 77,3 km de Elvas', desc:'Villa amurallada fronteriza con castillo, calles estrechas y vistas absolutamente impresionantes sobre la sierra y la frontera.', url:'https://goo.gl/maps/dFBbMRT32pqMB9po7', link:'Ver ubicación →' },
+            ],
+            en: [
+                { name:'Juromenha', dist:'📍 17.5 km from Elvas', desc:'Medieval village with a castle and a privileged viewpoint overlooking Spain and the Guadiana River. A journey into Portugal\'s medieval past.', url:'https://goo.gl/maps/qBAVeHE31rmzyApH8', link:'View location →' },
+                { name:'Monsaraz', dist:'📍 69.7 km from Elvas', desc:'Medieval village in perfect condition, with a spectacular viewpoint over the Alqueva reservoir.', url:'https://goo.gl/maps/MWw1fFQdjqAVAfJA8', link:'View location →' },
+                { name:'Marvão', dist:'📍 77.3 km from Elvas', desc:'Fortified border village with a castle, narrow streets and absolutely stunning views over the mountains and border.', url:'https://goo.gl/maps/dFBbMRT32pqMB9po7', link:'View location →' },
+            ],
+        },
+        estacionamento: {
+            pt: [
+                { name:'Praça da República', info:'Subterrâneo, 1ª hora gratuita', tags:['Não aconselhável a veículos grandes'], tagColors:[''], url:'https://goo.gl/maps/5Tix55jzNZXSFbWu5', link:'Ver no mapa →' },
+                { name:'Praça de Armas', info:'', tags:['Gratuito','Aconselhável a veículos grandes'], tagColors:['','var(--terracotta)'], url:'https://goo.gl/maps/BLvCWRRELofCV47E7', link:'Ver no mapa →' },
+                { name:'Estacionamento Shell', info:'', tags:['Gratuito'], tagColors:[''], url:'https://goo.gl/maps/LWLKETsK2MXDjQUn6', link:'Ver no mapa →' },
+                { name:'Parque Casa das Barcas', info:'Acesso através das muralhas a novo parque de grandes dimensões', tags:['Gratuito','Aconselhável a veículos grandes'], tagColors:['','var(--terracotta)'], url:'https://goo.gl/maps/1rEaiMaiYGzj9BFx9', link:'Ver no mapa →' },
+            ],
+            es: [
+                { name:'Praça da República', info:'Subterráneo, 1ª hora gratuita', tags:['No recomendado para vehículos grandes'], tagColors:[''], url:'https://goo.gl/maps/5Tix55jzNZXSFbWu5', link:'Ver en el mapa →' },
+                { name:'Praça de Armas', info:'', tags:['Gratuito','Recomendado para vehículos grandes'], tagColors:['','var(--terracotta)'], url:'https://goo.gl/maps/BLvCWRRELofCV47E7', link:'Ver en el mapa →' },
+                { name:'Aparcamiento Shell', info:'', tags:['Gratuito'], tagColors:[''], url:'https://goo.gl/maps/LWLKETsK2MXDjQUn6', link:'Ver en el mapa →' },
+                { name:'Parque Casa das Barcas', info:'Acceso a través de las murallas a un nuevo aparcamiento de gran tamaño', tags:['Gratuito','Recomendado para vehículos grandes'], tagColors:['','var(--terracotta)'], url:'https://goo.gl/maps/1rEaiMaiYGzj9BFx9', link:'Ver en el mapa →' },
+            ],
+            en: [
+                { name:'Praça da República', info:'Underground, 1st hour free', tags:['Not recommended for large vehicles'], tagColors:[''], url:'https://goo.gl/maps/5Tix55jzNZXSFbWu5', link:'View on map →' },
+                { name:'Praça de Armas', info:'', tags:['Free','Recommended for large vehicles'], tagColors:['','var(--terracotta)'], url:'https://goo.gl/maps/BLvCWRRELofCV47E7', link:'View on map →' },
+                { name:'Shell Parking', info:'', tags:['Free'], tagColors:[''], url:'https://goo.gl/maps/LWLKETsK2MXDjQUn6', link:'View on map →' },
+                { name:'Parque Casa das Barcas', info:'Access through the city walls to a large new car park', tags:['Free','Recommended for large vehicles'], tagColors:['','var(--terracotta)'], url:'https://goo.gl/maps/1rEaiMaiYGzj9BFx9', link:'View on map →' },
+            ],
+        },
+        locais: {
+            pt: [
+                { icon:'🌍', name:'Elvas - Património Mundial da UNESCO', body:`<p><strong>ELVAS</strong>, conhecida como <strong>"A Rainha da Fronteira"</strong>, é <strong>Património Mundial da UNESCO</strong> (desde 2012) como <strong>"Cidade-Quartel Fronteiriça de Elvas e suas Fortificações"</strong>, destacando-se como o <strong>maior sistema de fortificações abaluartadas terrestres do mundo</strong>.</p><p>O conjunto abrange 300 hectares, incluindo <strong>muralhas do séc. XVII</strong>, o <strong>Forte da Graça</strong>, o <strong>Forte de Santa Luzia</strong> e o imponente <strong>Aqueduto da Amoreira</strong>.</p><p>O seu <strong>Conjunto Patrimonial Único</strong> tem por principais elementos:<br>• <strong>Fortificações Abaluartadas (Séc. XVII)</strong>: Sistema defensivo único, com um perímetro de 8 a 10 km, exemplar da arquitectura militar holandesa.<br>• <strong>Forte da Graça (Forte Conde de Lippe)</strong>: Considerado uma das fortalezas mais poderosas do mundo, construído no século XVIII num monte elevado.<br>• <strong>Forte de Santa Luzia</strong>: Exemplo notável de fortificação abaluartada.<br>• <strong>Aqueduto da Amoreira</strong>: Construído entre 1530 e 1622, é um marco monumental com mais de 5 km de extensão e arcos que atingem 30 metros de altura.<br>• <strong>Centro Histórico</strong>: Inclui o <strong>Castelo de Elvas</strong> (primeiro <strong>Monumento Nacional em 1906</strong>), diversas igrejas (como a <strong>Sé de Elvas</strong>), conventos, fontes e o Museu de Arte Contemporânea (MACE).<br>• <strong>Fortins</strong>: São Pedro, São Mamede e São Domingos/Piedade.</p><p>Este <strong>vasto património arquitectónico, militar e religioso</strong> reflecte a importância estratégica de Elvas na história de Portugal, particularmente durante a Guerra da Restauração.</p>` },                { icon:'🏰', name:'Castelo de Elvas', body:`<p>Visita obrigatória ao Castelo e ruas circundantes. Aproveite para conhecer a Fábrica Museu da Ameixa de Elvas.</p><a href="https://goo.gl/maps/pGN14FSZkz9rZH1M6" target="_blank">Ver Castelo</a><br><a href="https://goo.gl/maps/sZMxK5sf9gRnubAn6" target="_blank">Ver Fábrica Museu da Ameixa</a>` },
+                { icon:'🏛️', name:'Muralhas e Fortificações', body:`<p>Sistema de fortificações abaluartadas único. Recomendamos visita noturna de carro pela circular da cidade.</p><div class="highlight">Durante o dia, percorra a zona de fossos desde o museu militar</div><a href="https://goo.gl/maps/aSNqL5NW8Jd6zjMg8" target="_blank">Ver localização</a>` },
+                { icon:'🏯', name:'Forte da Graça', body:`<p>Esplêndida e grandiosa construção situada numa grande elevação a Norte.</p><a href="https://maps.app.goo.gl/8zaT8vMfXdKg9z867" target="_blank">Ver localização</a>` },
+                { icon:'💧', name:'Aqueduto da Amoreira', body:`<div class="highlight">Maior aqueduto da Península Ibérica com 8,5 km de extensão, datado de 1498</div><a href="https://goo.gl/maps/qxJF5qeC4oUBUTBA6" target="_blank">Ver localização</a>` },
+                { icon:'⛪', name:'Capela N. Sra. da Conceição', body:`<p>Situada sob a cintura de muralhas com miradouro privilegiado sobre a cidade.</p><a href="https://goo.gl/maps/9W9xEPLKhTRFGHSH8" target="_blank">Ver localização</a>` },
+                { icon:'ℹ️', name:'Posto de Turismo', body:`<p>Situado na Praça da República, ideal para recolher informação sobre Elvas e a região.</p><a href="https://goo.gl/maps/1mmQAauJNFjGkJMW7" target="_blank">Ver localização</a>` },
+            ],
+            es: [
+                { icon:'🌍', name:'Elvas - Patrimonio Mundial de la UNESCO', body:`<p><strong>ELVAS</strong>, conocida como <strong>"La Reina de la Frontera"</strong>, es <strong>Patrimonio Mundial de la UNESCO</strong> (desde 2012) como <strong>"Ciudad-Cuartel Fronteriza de Elvas y sus Fortificaciones"</strong>, destacándose como el <strong>mayor sistema de fortificaciones abaluartadas terrestres del mundo</strong>.</p><p>El conjunto abarca 300 hectáreas, incluyendo <strong>murallas del s. XVII</strong>, el <strong>Fuerte de la Gracia</strong>, el <strong>Fuerte de Santa Luzia</strong> y el imponente <strong>Acueducto de Amoreira</strong>.</p><p>Su <strong>Conjunto Patrimonial Único</strong> tiene como principales elementos:<br>• <strong>Fortificaciones Abaluartadas (S. XVII)</strong>: Sistema defensivo único, con un perímetro de 8 a 10 km, exponente de la arquitectura militar holandesa.<br>• <strong>Fuerte de la Gracia (Fuerte Conde de Lippe)</strong>: Considerado una de las fortalezas más poderosas del mundo, construido en el siglo XVIII sobre una colina elevada.<br>• <strong>Fuerte de Santa Luzia</strong>: Notable ejemplo de fortificación abaluartada.<br>• <strong>Acueducto de Amoreira</strong>: Construido entre 1530 y 1622, es un hito monumental con más de 5 km de longitud y arcos que alcanzan 30 metros de altura.<br>• <strong>Centro Histórico</strong>: Incluye el <strong>Castillo de Elvas</strong> (primer <strong>Monumento Nacional en 1906</strong>), diversas iglesias (como la <strong>Catedral de Elvas</strong>), conventos, fuentes y el Museo de Arte Contemporáneo (MACE).<br>• <strong>Fortines</strong>: São Pedro, São Mamede y São Domingos/Piedade.</p><p>Este <strong>vasto patrimonio arquitectónico, militar y religioso</strong> refleja la importancia estratégica de Elvas en la historia de Portugal, particularmente durante la Guerra de Restauración.</p>` },
+                { icon:'🏰', name:'Castillo de Elvas', body:`<p>Visita obligada al Castillo y calles circundantes. Aproveche para conocer la Fábrica Museo de la Ciruela de Elvas.</p><a href="https://goo.gl/maps/pGN14FSZkz9rZH1M6" target="_blank">Ver Castillo</a><br><a href="https://goo.gl/maps/sZMxK5sf9gRnubAn6" target="_blank">Ver Fábrica Museo de la Ciruela</a>` },
+                { icon:'🏛️', name:'Murallas y Fortificaciones', body:`<p>Sistema único de fortificaciones abaluartadas. Recomendamos visita nocturna en coche por la ronda de la ciudad.</p><div class="highlight">Durante el día, recorra la zona de fosos desde el museo militar</div><a href="https://goo.gl/maps/aSNqL5NW8Jd6zjMg8" target="_blank">Ver ubicación</a>` },
+                { icon:'🏯', name:'Fuerte de la Gracia', body:`<p>Espléndida y grandiosa construcción situada en una gran elevación al Norte.</p><a href="https://maps.app.goo.gl/8zaT8vMfXdKg9z867" target="_blank">Ver ubicación</a>` },
+                { icon:'💧', name:'Acueducto de Amoreira', body:`<div class="highlight">Mayor acueducto de la Península Ibérica con 8,5 km de longitud, datado de 1498</div><a href="https://goo.gl/maps/qxJF5qeC4oUBUTBA6" target="_blank">Ver ubicación</a>` },
+                { icon:'⛪', name:'Capilla N. Sra. de la Concepción', body:`<p>Situada bajo la muralla con mirador privilegiado sobre la ciudad.</p><a href="https://goo.gl/maps/9W9xEPLKhTRFGHSH8" target="_blank">Ver ubicación</a>` },
+                { icon:'ℹ️', name:'Oficina de Turismo', body:`<p>Situada en la Praça da República, ideal para obtener información sobre Elvas y la región.</p><a href="https://goo.gl/maps/1mmQAauJNFjGkJMW7" target="_blank">Ver ubicación</a>` },
+            ],
+            en: [
+                { icon:'🌍', name:'Elvas - UNESCO World Heritage', body:`<p><strong>ELVAS</strong>, known as <strong>"The Queen of the Border"</strong>, has been a <strong>UNESCO World Heritage Site</strong> since 2012, inscribed as the <strong>"Garrison Border Town of Elvas and its Fortifications"</strong> — the <strong>largest bulwark fortification system on land in the world</strong>.</p><p>The site covers 300 hectares, including <strong>17th-century walls</strong>, the <strong>Fort of Graça</strong>, the <strong>Fort of Santa Luzia</strong> and the monumental <strong>Amoreira Aqueduct</strong>.</p><p>Its <strong>Unique Heritage Complex</strong> comprises:<br>• <strong>Bulwark Fortifications (17th c.)</strong>: A unique defensive system with a perimeter of 8–10 km, a masterpiece of Dutch military architecture.<br>• <strong>Fort of Graça (Fort Conde de Lippe)</strong>: Considered one of the most powerful fortresses in the world, built in the 18th century on a high hill.<br>• <strong>Fort of Santa Luzia</strong>: A remarkable example of bastion fortification.<br>• <strong>Amoreira Aqueduct</strong>: Built between 1530 and 1622, a monumental structure stretching over 5 km with arches reaching 30 metres in height.<br>• <strong>Historic Centre</strong>: Home to <strong>Elvas Castle</strong> (Portugal's first <strong>National Monument in 1906</strong>), several churches (including <strong>Elvas Cathedral</strong>), convents, fountains and the Museum of Contemporary Art (MACE).<br>• <strong>Forts</strong>: São Pedro, São Mamede and São Domingos/Piedade.</p><p>This <strong>vast architectural, military and religious heritage</strong> reflects Elvas's strategic importance in Portuguese history, particularly during the War of Restoration.</p>` },
+                { icon:'🏰', name:'Elvas Castle', body:`<p>A must-visit: the Castle and its surrounding streets. Don't miss the Elvas Plum Factory Museum.</p><a href="https://goo.gl/maps/pGN14FSZkz9rZH1M6" target="_blank">View Castle</a><br><a href="https://goo.gl/maps/sZMxK5sf9gRnubAn6" target="_blank">View Plum Factory Museum</a>` },
+                { icon:'🏛️', name:'Walls & Fortifications', body:`<p>A unique bastion fortification system. We recommend a night drive around the city ring road.</p><div class="highlight">During the day, explore the moat area starting from the military museum</div><a href="https://goo.gl/maps/aSNqL5NW8Jd6zjMg8" target="_blank">View location</a>` },
+                { icon:'🏯', name:'Fort of Graça', body:`<p>A splendid and grand structure perched on a high hill to the North.</p><a href="https://maps.app.goo.gl/8zaT8vMfXdKg9z867" target="_blank">View location</a>` },
+                { icon:'💧', name:'Amoreira Aqueduct', body:`<div class="highlight">The largest aqueduct on the Iberian Peninsula, stretching 8.5 km, dating from 1498</div><a href="https://goo.gl/maps/qxJF5qeC4oUBUTBA6" target="_blank">View location</a>` },
+                { icon:'⛪', name:'Chapel of N. Sra. da Conceição', body:`<p>Located below the city walls with a privileged viewpoint over the city.</p><a href="https://goo.gl/maps/9W9xEPLKhTRFGHSH8" target="_blank">View location</a>` },
+                { icon:'ℹ️', name:'Tourism Office', body:`<p>Located in Praça da República, perfect for collecting information about Elvas and the region.</p><a href="https://goo.gl/maps/1mmQAauJNFjGkJMW7" target="_blank">View location</a>` },
+            ],
+        },
+        verao_elvas: {
+            pt: [
+                { name:'🏊 Piscinas Municipais de Elvas', dist:'Públicas – Descobertas e cobertas mediante a época do ano', url:'https://goo.gl/maps/SQJMWpSPTKCFykL2A', link:'Ver localização →' },
+                { name:'🏊 Piscina José Vicente Abreu', dist:'Clube Elvense de Natação – Descobertas mediante a época do ano', url:'https://goo.gl/maps/xbz2eMpbwhA5wTP47', link:'Ver localização →' },
+                { name:'🏊 Piscinas Elxadai', dist:'Unidade Hoteleira – Descobertas mediante a época do ano', url:'https://goo.gl/maps/TCJM3XP3RshGmFy29', link:'Ver localização →' },
+            ],
+            es: [
+                { name:'🏊 Piscinas Municipales de Elvas', dist:'Públicas – Descubiertas y cubiertas según la temporada', url:'https://goo.gl/maps/SQJMWpSPTKCFykL2A', link:'Ver ubicación →' },
+                { name:'🏊 Piscina José Vicente Abreu', dist:'Club Elvense de Natación – Descubiertas según la temporada', url:'https://goo.gl/maps/xbz2eMpbwhA5wTP47', link:'Ver ubicación →' },
+                { name:'🏊 Piscinas Elxadai', dist:'Unidad Hotelera – Descubiertas según la temporada', url:'https://goo.gl/maps/TCJM3XP3RshGmFy29', link:'Ver ubicación →' },
+            ],
+            en: [
+                { name:'🏊 Elvas Municipal Swimming Pools', dist:'Public – Outdoor and indoor depending on the season', url:'https://goo.gl/maps/SQJMWpSPTKCFykL2A', link:'View location →' },
+                { name:'🏊 José Vicente Abreu Pool', dist:'Elvense Swimming Club – Outdoor depending on the season', url:'https://goo.gl/maps/xbz2eMpbwhA5wTP47', link:'View location →' },
+                { name:'🏊 Elxadai Pools', dist:'Hotel Unit – Outdoor depending on the season', url:'https://goo.gl/maps/TCJM3XP3RshGmFy29', link:'View location →' },
+            ],
+        },
+        verao_regiao: {
+            pt: [
+                { name:"🏖️ Praia Fluvial de Azenhas d'El Rei", dist:'📍 52,7 km de Avenida · Alandroal', url:'https://goo.gl/maps/BNfq9G3JqFdMZZUZ6', link:'Ver localização →' },
+                { name:'🌊 Piscinas Naturales de La Codosera', dist:'📍 55,3 km de Avenida · Espanha', url:'https://goo.gl/maps/1ge4KtgAjAZPuCDWA', link:'Ver localização →' },
+                { name:'🏖️ Praia Fluvial de Monsaraz', dist:'📍 71,2 km de Avenida', url:'https://goo.gl/maps/uH5XVZ2C2QZ6MREs9', link:'Ver localização →' },
+                { name:'🎢 Parque Aquático AquaBadajoz', dist:'📍 14,7 km de Avenida · Badajoz, Espanha', url:'https://g.page/AQUABadajoz?share', link:'Ver localização →' },
+                { name:'🏖️ Piscina Fluvial de Portagem', dist:'📍 72,4 km de Avenida', url:'https://maps.app.goo.gl/ezN9qhPDGBj7b4yj8', link:'Ver localização →' },
+            ],
+            es: [
+                { name:"🏖️ Playa Fluvial de Azenhas d'El Rei", dist:'📍 52,7 km de Avenida · Alandroal', url:'https://goo.gl/maps/BNfq9G3JqFdMZZUZ6', link:'Ver ubicación →' },
+                { name:'🌊 Piscinas Naturales de La Codosera', dist:'📍 55,3 km de Avenida · España', url:'https://goo.gl/maps/1ge4KtgAjAZPuCDWA', link:'Ver ubicación →' },
+                { name:'🏖️ Playa Fluvial de Monsaraz', dist:'📍 71,2 km de Avenida', url:'https://goo.gl/maps/uH5XVZ2C2QZ6MREs9', link:'Ver ubicación →' },
+                { name:'🎢 Parque Acuático AquaBadajoz', dist:'📍 14,7 km de Avenida · Badajoz, España', url:'https://g.page/AQUABadajoz?share', link:'Ver ubicación →' },
+                { name:'🏖️ Piscina Fluvial de Portagem', dist:'📍 72,4 km de Avenida', url:'https://maps.app.goo.gl/ezN9qhPDGBj7b4yj8', link:'Ver ubicación →' },
+            ],
+            en: [
+                { name:"🏖️ Azenhas d'El Rei River Beach", dist:'📍 52.7 km from Avenida · Alandroal', url:'https://goo.gl/maps/BNfq9G3JqFdMZZUZ6', link:'View location →' },
+                { name:'🌊 La Codosera Natural Pools', dist:'📍 55.3 km from Avenida · Spain', url:'https://goo.gl/maps/1ge4KtgAjAZPuCDWA', link:'View location →' },
+                { name:'🏖️ Monsaraz River Beach', dist:'📍 71.2 km from Avenida', url:'https://goo.gl/maps/uH5XVZ2C2QZ6MREs9', link:'View location →' },
+                { name:'🎢 AquaBadajoz Water Park', dist:'📍 14.7 km from Avenida · Badajoz, Spain', url:'https://g.page/AQUABadajoz?share', link:'View location →' },
+                { name:'🏖️ Portagem River Pool', dist:'📍 72.4 km from Avenida', url:'https://maps.app.goo.gl/ezN9qhPDGBj7b4yj8', link:'View location →' },
+            ],
+        },
+    };
+
+    // ══════════════════════════════════════════════
+    // STATIC TRANSLATIONS (nav, headings, intros)
+    // ══════════════════════════════════════════════
+    const strings = {
+        pt: {
+            'nav-pastelarias':'🥐 Pastelarias','nav-restaurantes':'🍴 Restaurantes','nav-arredores':'🏘️ Arredores',
+            'nav-passeios':'🗺️ Passeios','nav-estacionamento':'🅿️ Estacionamento','nav-locais':'🏰 Locais de Interesse','nav-verao':'☀️ Verão',
+            'hero-subtitle':'Alojamento Local em Elvas',
+            'intro-text':'<strong>Avenida é o seu lar em Elvas!</strong><br><br><strong>Alojamento duplex</strong>, com 3 quartos, 2 WC, sala de estar, sala de jantar e cozinha.<br><br>Todos os espaços mobilados e decorados, com objectivo de transmitir a comodidade e conforto da nossa própria casa.<br><br>Somos uma <strong>Família de Alentejanos</strong> com gosto em receber.<br><br>Em qualquer viagem familiar, o que sempre procuramos é conhecer novos locais, pessoas e culturas, mas <strong>sentindo-nos "em casa"</strong>. Então, sentimo-nos privilegiados por poder receber e mostrar a <strong>Avenida, a nossa casa</strong>.<br><br>Situada na Av. da Piedade (Av. nobre da cidade de Elvas), beneficia ainda de uma localização privilegiada e vista desafogada sobre a mesma e sobre o recinto da igreja do Sr. Jesus da Piedade.<br><br>Quanto a <strong>Elvas</strong>, <strong>inexplicável!</strong><br><br>Ao desejarem visitar-nos, certamente já sabem o <strong>"incrível"</strong> que é, como são as suas gentes, a sua cultura, a sua cor.<br><br>Estamos certos que, embora não se explique, <strong>vão ADORAR</strong>!',
+            'sec-alojamento-title':'O Espaço',
+            'alojamento-desc':'O <strong>Avenida</strong> é um alojamento duplex totalmente mobilado e decorado, pensado para que se sinta em casa desde o primeiro momento.',
+            'feat-quartos-label':'3 Quartos','feat-quartos-desc':'Espaços confortáveis e bem equipados para um descanso perfeito.',
+            'feat-wc-label':'2 Casas de Banho','feat-wc-desc':'Totalmente equipadas para a sua comodidade.',
+            'feat-sala-label':'Sala de Estar','feat-sala-desc':'Espaço amplo para relaxar e conviver.',
+            'feat-jantar-label':'Sala de Jantar','feat-jantar-desc':'Mesa para refeições em família ou grupo.',
+            'feat-cozinha-label':'Cozinha Equipada','feat-cozinha-desc':'Totalmente equipada para preparar as suas refeições.',
+            'feat-duplex-label':'Duplex','feat-duplex-desc':'Dois pisos com espaço, privacidade e conforto.',
+            'gal-sala':'Sala de Estar','gal-quarto':'Quarto','gal-cozinha':'Cozinha','gal-wc':'Casa de Banho','gal-jantar':'Sala de Jantar',
+            'sec-pastelarias-title':'Pastelarias & Doçaria','sec-restaurantes-title':'Restaurantes - Elvas','sec-arredores-title':'Restaurantes - Arredores',
+            'sec-passeios-title':'Sugestões de Passeios','sec-estacionamento-title':'Estacionamento','sec-locais-title':'Locais de Interesse',
+            'sec-verao-title':'☀️ Se o Tempo Permitir...','sec-verao-intro':'Nos dias quentes do verão, aproveite para refrescar-se nas piscinas e praias fluviais da região.',
+            'sec-verao-em-elvas':'Em Elvas','sec-verao-na-regiao':'Na Região',
+            'footer-desc':'Descubra Elvas • Património Mundial da UNESCO • Alentejo • Portugal',
+            'booking-btn': 'Reserva Já',
+        },
+        es: {
+            'nav-pastelarias':'🥐 Pastelerías','nav-restaurantes':'🍴 Restaurantes','nav-arredores':'🏘️ Alrededores',
+            'nav-passeios':'🗺️ Excursiones','nav-estacionamento':'🅿️ Aparcamiento','nav-locais':'🏰 Lugares de Interés','nav-verao':'☀️ Verano',
+            'hero-subtitle':'Alojamiento Local en Elvas',
+            'intro-text':'<strong>¡Avenida es su hogar en Elvas!</strong><br><br><strong>Alojamiento dúplex</strong>, con 3 habitaciones, 2 baños, sala de estar, comedor y cocina.<br><br>Todos los espacios amueblados y decorados, con el objetivo de transmitir la comodidad y el confort de nuestra propia casa.<br><br>Somos una <strong>Familia de Alentejanos</strong> con gusto por recibir.<br><br>En cualquier viaje familiar, lo que siempre buscamos es conocer nuevos lugares, personas y culturas, pero <strong>sintiéndonos "en casa"</strong>. Por eso nos sentimos privilegiados de poder recibir y mostrar la <strong>Avenida, nuestra casa</strong>.<br><br>Situada en la Av. da Piedade (Av. noble de la ciudad de Elvas), se beneficia además de una ubicación privilegiada y de vistas despejadas sobre la misma y sobre el recinto de la iglesia del Sr. Jesús de la Piedade.<br><br>En cuanto a <strong>Elvas</strong>, <strong>¡inexplicable!</strong><br><br>Al desear visitarnos, seguramente ya conocen lo <strong>"increíble"</strong> que es, cómo son sus gentes, su cultura, su color.<br><br>Estamos seguros de que, aunque no se explique, <strong>van a ADORARLA</strong>!',
+            'sec-alojamento-title':'El Espacio',
+            'alojamento-desc':'<strong>Avenida</strong> es un alojamiento dúplex totalmente amueblado y decorado, pensado para que se sienta como en casa desde el primer momento.',
+            'feat-quartos-label':'3 Habitaciones','feat-quartos-desc':'Espacios cómodos y bien equipados para un descanso perfecto.',
+            'feat-wc-label':'2 Baños','feat-wc-desc':'Completamente equipados para su comodidad.',
+            'feat-sala-label':'Sala de Estar','feat-sala-desc':'Espacio amplio para relajarse y convivir.',
+            'feat-jantar-label':'Comedor','feat-jantar-desc':'Mesa para comidas en familia o grupo.',
+            'feat-cozinha-label':'Cocina Equipada','feat-cozinha-desc':'Completamente equipada para preparar sus comidas.',
+            'feat-duplex-label':'Dúplex','feat-duplex-desc':'Dos plantas con espacio, privacidad y confort.',
+            'gal-sala':'Sala de Estar','gal-quarto':'Habitación','gal-cozinha':'Cocina','gal-wc':'Baño','gal-jantar':'Comedor',
+            'sec-pastelarias-title':'Pastelerías & Dulces','sec-restaurantes-title':'Restaurantes - Elvas','sec-arredores-title':'Restaurantes - Alrededores',
+            'sec-passeios-title':'Sugerencias de Excursiones','sec-estacionamento-title':'Aparcamiento','sec-locais-title':'Lugares de Interés',
+            'sec-verao-title':'☀️ Si el Tiempo lo Permite...','sec-verao-intro':'En los días calurosos del verano, aproveche para refrescarse en las piscinas y playas fluviales de la región.',
+            'sec-verao-em-elvas':'En Elvas','sec-verao-na-regiao':'En la Región',
+            'footer-desc':'Descubra Elvas • Patrimonio Mundial de la UNESCO • Alentejo • Portugal',
+            'booking-btn': 'Reservar Ahora',
+        },
+        en: {
+            'nav-pastelarias':'🥐 Bakeries','nav-restaurantes':'🍴 Restaurants','nav-arredores':'🏘️ Surroundings',
+            'nav-passeios':'🗺️ Day Trips','nav-estacionamento':'🅿️ Parking','nav-locais':'🏰 Points of Interest','nav-verao':'☀️ Summer',
+            'hero-subtitle':'Local Accommodation in Elvas',
+            'intro-text':'<strong>Avenida is your home in Elvas!</strong><br><br><strong>Duplex accommodation</strong>, with 3 bedrooms, 2 bathrooms, living room, dining room and kitchen.<br><br>All spaces are furnished and decorated with the aim of conveying the comfort and cosiness of our own home.<br><br>We are an <strong>Alentejo Family</strong> who loves to welcome guests.<br><br>On any family trip, what we always seek is to discover new places, people and cultures, while <strong>feeling "at home"</strong>. So we feel privileged to be able to welcome you and share <strong>Avenida, our home</strong>.<br><br>Located on Av. da Piedade (one of Elvas\'s most distinguished avenues), it also benefits from a privileged position with open views over the avenue and the grounds of the Igreja do Sr. Jesus da Piedade.<br><br>As for <strong>Elvas</strong>, it is simply <strong>inexplicable!</strong><br><br>If you are thinking of visiting us, you probably already know how <strong>"incredible"</strong> it is — its people, its culture, its colour.<br><br>We are certain that, even if words fail, you will simply <strong>LOVE IT</strong>!',
+            'sec-alojamento-title':'The Space',
+            'alojamento-desc':'<strong>Avenida</strong> is a fully furnished and decorated duplex apartment, designed so you feel at home from the very first moment.',
+            'feat-quartos-label':'3 Bedrooms','feat-quartos-desc':'Comfortable, well-equipped spaces for a perfect rest.',
+            'feat-wc-label':'2 Bathrooms','feat-wc-desc':'Fully equipped for your convenience.',
+            'feat-sala-label':'Living Room','feat-sala-desc':'Spacious area to relax and gather.',
+            'feat-jantar-label':'Dining Room','feat-jantar-desc':'Dining table for family or group meals.',
+            'feat-cozinha-label':'Fitted Kitchen','feat-cozinha-desc':'Fully equipped to prepare your meals.',
+            'feat-duplex-label':'Duplex','feat-duplex-desc':'Two floors offering space, privacy and comfort.',
+            'gal-sala':'Living Room','gal-quarto':'Bedroom','gal-cozinha':'Kitchen','gal-wc':'Bathroom','gal-jantar':'Dining Room',
+            'sec-pastelarias-title':'Bakeries & Pastries','sec-restaurantes-title':'Restaurants - Elvas','sec-arredores-title':'Restaurants - Surroundings',
+            'sec-passeios-title':'Day Trip Suggestions','sec-estacionamento-title':'Parking','sec-locais-title':'Points of Interest',
+            'sec-verao-title':'☀️ If the Weather Allows...','sec-verao-intro':'On hot summer days, cool off at the swimming pools and river beaches in the region.',
+            'sec-verao-em-elvas':'In Elvas','sec-verao-na-regiao':'In the Region',
+            'footer-desc':'Discover Elvas • UNESCO World Heritage • Alentejo • Portugal',
+            'booking-btn': 'Book Now',
+        },
+    };
+
+    // ══════════════════════════════════════════════
+    // RENDER HELPERS
+    // ══════════════════════════════════════════════
+    function renderCards(gridId, items) {
+        const el = document.getElementById(gridId);
+        if (!el) return;
+        el.innerHTML = items.map(item => `
+            <div class="card stagger-animation">
+                <div class="card-header">
+                    <span class="icon">${item.icon}</span>
+                    <h3>${item.name}</h3>
+                </div>
+                <div class="card-body">
+                    <div class="establishment">${item.body}</div>
+                </div>
+            </div>`).join('');
+    }
+
+    function renderExcursions(gridId, items) {
+        const el = document.getElementById(gridId);
+        if (!el) return;
+        el.innerHTML = items.map(item => `
+            <div class="excursion-card stagger-animation">
+                <h3>${item.name}</h3>
+                <p class="distance">${item.dist}</p>
+                ${item.desc ? `<p>${item.desc}</p>` : ''}
+                <a href="${item.url}" target="_blank" style="color: var(--gold);">${item.link}</a>
+            </div>`).join('');
+    }
+
+    function renderParking(gridId, items) {
+        const el = document.getElementById(gridId);
+        if (!el) return;
+        el.innerHTML = items.map(item => {
+            const tagsHtml = item.tags.map((t, i) => `<span class="tag"${item.tagColors[i] ? ` style="background:${item.tagColors[i]}"` : ''}>${t}</span>`).join(' ');
+            return `<div class="parking-item">
+                <h4>${item.name}</h4>
+                ${item.info ? `<p>${item.info}</p>` : ''}
+                ${tagsHtml}
+                <br><a href="${item.url}" target="_blank">${item.link}</a>
+            </div>`;
+        }).join('');
+    }
+
+    // ══════════════════════════════════════════════
+    // MAIN setLang FUNCTION
+    // ══════════════════════════════════════════════
+    function setLang(lang) {
+        document.documentElement.lang = lang;
+
+        // Update buttons
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.textContent === lang.toUpperCase());
+        });
+
+        // Translate static strings
+        const t = strings[lang];
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (t[key] !== undefined) el.innerHTML = t[key];
+        });
+
+        // Render dynamic card sections
+        renderCards('grid-pastelarias', cardData.pastelarias[lang]);
+        renderCards('grid-restaurantes', cardData.restaurantes[lang]);
+        renderCards('grid-arredores', cardData.arredores[lang]);
+        renderExcursions('grid-passeios', cardData.passeios[lang]);
+        renderParking('grid-estacionamento', cardData.estacionamento[lang]);
+        // Render UNESCO intro banner separately
+        const locaisData = cardData.locais[lang];
+        const introWrapper = document.getElementById('locais-intro-wrapper');
+        if (introWrapper && locaisData.length > 0) {
+            const intro = locaisData[0];
+            introWrapper.innerHTML = `<div class="locais-intro-banner stagger-animation">
+                <h3>${intro.name}</h3>
+                ${intro.body}
+            </div>`;
+        }
+        renderCards('grid-locais', locaisData.slice(1));
+        renderExcursions('grid-verao-elvas', cardData.verao_elvas[lang]);
+        renderExcursions('grid-verao-regiao', cardData.verao_regiao[lang]);
+    }
+
+    // ── Smooth scroll with offset for fixed nav ──
+    const nav = document.getElementById('topNav');
+    document.querySelectorAll('.top-nav a[href^="#"]').forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            const href = link.getAttribute('href');
+            if (href === '#') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                return;
+            }
+            const target = document.querySelector(href);
+            if (target) {
+                requestAnimationFrame(() => {
+                    const offset = nav.offsetHeight + 16;
+                    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                });
+            }
+        });
+    });
+
+    // Init with Portuguese
+    setLang('pt');
+
+    // Position lang selector flush below nav
+    function positionLangSelector() {
+        requestAnimationFrame(() => {
+            const navH = document.getElementById('topNav').offsetHeight;
+            document.querySelector('.lang-selector').style.top = navH + 'px';
+        });
+    }
+    positionLangSelector();
+    window.addEventListener('resize', positionLangSelector);
+    </script>
+</body>
+</html>
