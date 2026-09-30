@@ -1,226 +1,313 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Herdade de Pedregais</title>
-<style>
-  :root {
-    --fundo: #f7f8f4;
-    --tinta: #1f2a1c;
-    --verde: #3e5b3a;
-    --ocre: #a8821f;
-    --linha: #d5d9c9;
-    --painel: #ffffff;
-    --carencia: #9a3b2e;
-    --carencia-fundo: #fbeeea;
-    --melhoria: #2f6b3a;
-    --melhoria-fundo: #e9f4ea;
-  }
-  @media (prefers-color-scheme: dark) {
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Herdade de Pedregais – Visita de estudo</title>
+
+  <style>
     :root {
-      --fundo: #141a12;
-      --tinta: #e8ecdf;
-      --verde: #8fb38a;
-      --ocre: #d4b04e;
-      --linha: #2c3628;
-      --painel: #1b2318;
-      --carencia: #e58c7c;
-      --carencia-fundo: #2c1b18;
-      --melhoria: #8fd19a;
-      --melhoria-fundo: #182a1b;
+      --fundo: #f7f8f4;
+      --tinta: #1f2a1c;
+      --verde: #3e5b3a;
+      --ocre: #a8821f;
+      --linha: #d5d9c9;
+      --painel: #ffffff;
+      --carencia: #9a3b2e;
+      --carencia-fundo: #fbeeea;
+      --melhoria: #2f6b3a;
+      --melhoria-fundo: #e9f4ea;
     }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--fundo);
-    color: var(--tinta);
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.6;
-  }
 
-  /* Cabeçalho: título à esquerda, logótipo no canto direito */
-  header {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem 1.25rem 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.25rem;
-  }
-  h1 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(1.8rem, 5vw, 3rem);
-    line-height: 1.1;
-    margin: 0;
-    color: var(--verde);
-  }
-  .logo {
-    width: 20px;
-    aspect-ratio: 204 / 131;
-    flex: none;
-  }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fundo: #141a12;
+        --tinta: #e8ecdf;
+        --verde: #8fb38a;
+        --ocre: #d4b04e;
+        --linha: #2c3628;
+        --painel: #1b2318;
+        --carencia: #e58c7c;
+        --carencia-fundo: #2c1b18;
+        --melhoria: #8fd19a;
+        --melhoria-fundo: #182a1b;
+      }
+    }
 
-  /* Secções empilhadas: 2014 e depois 2026 */
-  main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1.25rem 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  section {
-    background: var(--painel);
-    border: 1px solid var(--linha);
-    border-radius: 6px;
-    padding: 1.5rem;
-    display: grid;
-    grid-template-columns: minmax(200px, 320px) 1fr;
-    gap: 1.75rem;
-    align-items: start;
-  }
-  @media (max-width: 720px) {
-    section { grid-template-columns: 1fr; }
-    header { flex-direction: column-reverse; align-items: flex-start; }
-  }
-  h2 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 2.6rem;
-    line-height: 1;
-    margin: 0 0 1rem;
-    color: var(--ocre);
-  }
-  h3 { margin: 0 0 .75rem; font-size: 1.15rem; }
+    * {
+      box-sizing: border-box;
+    }
 
-  /* Cartões de carências / melhorias */
-  .lista { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
-  .lista li {
-    display: flex;
-    gap: .75rem;
-    align-items: flex-start;
-    padding: .75rem .9rem;
-    border-radius: 6px;
-    border-left: 4px solid currentColor;
-  }
-  .lista strong { display: block; color: var(--tinta); }
-  .lista span { font-size: .9rem; color: var(--tinta); opacity: .8; }
-  .marca { font-weight: 700; font-size: 1.2rem; line-height: 1.4; flex: none; }
-  .carencias li { color: var(--carencia); background: var(--carencia-fundo); }
-  .melhorias li { color: var(--melhoria); background: var(--melhoria-fundo); }
+    body {
+      margin: 0;
+      background: var(--fundo);
+      color: var(--tinta);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+    }
 
-  /* Espaço para imagens: basta colocar o ficheiro na pasta "images" do GitHub */
-  .imagem {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 533 / 765;
-    border: 2px dashed var(--linha);
-    border-radius: 4px;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    padding: 1rem;
-    font-size: .9rem;
-    margin: 0;
-  }
-  .imagem img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 2px;
-  }
-  .imagem.ok { border: 0; padding: 0; }
-  .imagem.ok span { display: none; }
-  .logo.imagem { aspect-ratio: 204 / 131; padding: .25rem; font-size: .7rem; }
-  .logo.imagem img { object-fit: contain; }
-</style>
+    /* Cabeçalho: logótipo por cima do título */
+    header {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      line-height: 1.1;
+      margin: 0;
+      color: var(--verde);
+    }
+
+    .logo {
+      width: 120px;
+      aspect-ratio: 204 / 131;
+      flex: none;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1.25rem 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    section {
+      background: var(--painel);
+      border: 1px solid var(--linha);
+      border-radius: 6px;
+      padding: 1.5rem;
+      display: grid;
+      grid-template-columns: minmax(200px, 320px) 1fr;
+      gap: 1.75rem;
+      align-items: start;
+    }
+
+    @media (max-width: 720px) {
+      section {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2.6rem;
+      line-height: 1;
+      margin: 0 0 1rem;
+      color: var(--ocre);
+    }
+
+    h3 {
+      margin: 0 0 .75rem;
+      font-size: 1.15rem;
+    }
+
+    .lista {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: .6rem;
+    }
+
+    .lista li {
+      display: flex;
+      gap: .75rem;
+      align-items: flex-start;
+      padding: .75rem .9rem;
+      border-radius: 6px;
+      border-left: 4px solid currentColor;
+    }
+
+    .lista strong {
+      display: block;
+      color: var(--tinta);
+    }
+
+    .lista span {
+      font-size: .9rem;
+      color: var(--tinta);
+      opacity: .8;
+    }
+
+    .marca {
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 1.4;
+      flex: none;
+    }
+
+    .carencias li {
+      color: var(--carencia);
+      background: var(--carencia-fundo);
+    }
+
+    .melhorias li {
+      color: var(--melhoria);
+      background: var(--melhoria-fundo);
+    }
+
+    .imagem {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 533 / 765;
+      border: 2px dashed var(--linha);
+      border-radius: 4px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 1rem;
+      font-size: .9rem;
+      margin: 0;
+    }
+
+    .imagem img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 2px;
+    }
+
+    .imagem.ok {
+      border: 0;
+      padding: 0;
+    }
+
+    .imagem.ok span {
+      display: none;
+    }
+
+    .logo.imagem {
+      aspect-ratio: 204 / 131;
+      padding: .25rem;
+      font-size: .7rem;
+    }
+
+    .logo.imagem img {
+      object-fit: contain;
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-  <h1>Bem-vindo à Herdade de Pedregais</h1>
-  <!-- Logótipo: colocar em images/logo.png -->
-  <div class="logo imagem">
-    <span>images/logo.png</span>
-    <img src="images/logo.png" alt="Logótipo" onload="this.parentNode.classList.add('ok')" onerror="this.remove()">
-  </div>
-</header>
-
-<main>
-  <section>
-    <!-- Imagem: colocar em images/pedregais-2014.png -->
-    <figure class="imagem">
-      <span>images/pedregais-2014.png</span>
-      <img src="images/pedregais-2014.png" alt="Mapa da Herdade de Pedregais em 2014" onload="this.parentNode.classList.add('ok')" onerror="this.remove()">
-    </figure>
-    <div>
-      <h2>2014</h2>
-      <h3>Carências</h3>
-      <ul class="lista carencias">
-        <li>
-          <span class="marca" aria-hidden="true">✕</span>
-          <div>
-            <strong>Abeberamento</strong>
-            <span>Falta de pontos de água para o gado</span>
-          </div>
-        </li>
-        <li>
-          <span class="marca" aria-hidden="true">✕</span>
-          <div>
-            <strong>Pastagens</strong>
-            <span>Pastagens insuficientes ou pouco produtivas</span>
-          </div>
-        </li>
-        <li>
-          <span class="marca" aria-hidden="true">✕</span>
-          <div>
-            <strong>Encabeçamento baixo</strong>
-            <span>Poucos animais por hectare</span>
-          </div>
-        </li>
-      </ul>
+  <header>
+    <!-- Logótipo: colocar em images/logo.png -->
+    <div class="logo imagem">
+      <span>images/logo.png</span>
+      <img
+        src="images/logo.png"
+        alt="Logótipo da Herdade de Pedregais"
+        onload="this.parentNode.classList.add('ok')"
+        onerror="this.remove()"
+      >
     </div>
-  </section>
 
-  <section>
-    <!-- Imagem: colocar em images/pedregais-2026.png -->
-    <figure class="imagem">
-      <span>images/pedregais-2026.png</span>
-      <img src="images/pedregais-2026.png" alt="Mapa da Herdade de Pedregais em 2026" onload="this.parentNode.classList.add('ok')" onerror="this.remove()">
-    </figure>
-    <div>
-      <h2>2026</h2>
-      <h3>Melhorias</h3>
-      <ul class="lista melhorias">
-        <li>
-          <span class="marca" aria-hidden="true">✓</span>
-          <div>
-            <strong>Água em todos os parques</strong>
-            <span>Abeberamento garantido em cada parque</span>
-          </div>
-        </li>
-        <li>
-          <span class="marca" aria-hidden="true">✓</span>
-          <div>
-            <strong>Maneio sustentável e melhoria das pastagens</strong>
-            <span>Pastagens mais produtivas e bem geridas</span>
-          </div>
-        </li>
-        <li>
-          <span class="marca" aria-hidden="true">✓</span>
-          <div>
-            <strong>Maior encabeçamento com menos exigências e desperdícios</strong>
-            <span>Mais animais por hectare, com uso mais eficiente dos recursos</span>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-</main>
+    <h1>Bem-vindo à Herdade de Pedregais</h1>
+  </header>
+
+  <main>
+
+    <section>
+      <!-- Imagem: colocar em images/pedregais-2014.png -->
+      <figure class="imagem">
+        <span>images/pedregais-2014.png</span>
+        <img
+          src="images/pedregais-2014.png"
+          alt="Mapa da Herdade de Pedregais em 2014"
+          onload="this.parentNode.classList.add('ok')"
+          onerror="this.remove()"
+        >
+      </figure>
+
+      <div>
+        <h2>2014</h2>
+        <h3>Carências</h3>
+
+        <ul class="lista carencias">
+          <li>
+            <span class="marca" aria-hidden="true">✕</span>
+            <div>
+              <strong>Abeberamento</strong>
+              <span>Falta de pontos de água para o gado</span>
+            </div>
+          </li>
+
+          <li>
+            <span class="marca" aria-hidden="true">✕</span>
+            <div>
+              <strong>Pastagens</strong>
+              <span>Pastagens insuficientes ou pouco produtivas</span>
+            </div>
+          </li>
+
+          <li>
+            <span class="marca" aria-hidden="true">✕</span>
+            <div>
+              <strong>Encabeçamento baixo</strong>
+              <span>Poucos animais por hectare</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <!-- Imagem: colocar em images/pedregais-2026.png -->
+      <figure class="imagem">
+        <span>images/pedregais-2026.png</span>
+        <img
+          src="images/pedregais-2026.png"
+          alt="Mapa da Herdade de Pedregais em 2026"
+          onload="this.parentNode.classList.add('ok')"
+          onerror="this.remove()"
+        >
+      </figure>
+
+      <div>
+        <h2>2026</h2>
+        <h3>Melhorias</h3>
+
+        <ul class="lista melhorias">
+          <li>
+            <span class="marca" aria-hidden="true">✓</span>
+            <div>
+              <strong>Água em todos os parques</strong>
+              <span>Abeberamento garantido em cada parque</span>
+            </div>
+          </li>
+
+          <li>
+            <span class="marca" aria-hidden="true">✓</span>
+            <div>
+              <strong>Maneio sustentável e melhoria das pastagens</strong>
+              <span>Pastagens mais produtivas e bem geridas</span>
+            </div>
+          </li>
+
+          <li>
+            <span class="marca" aria-hidden="true">✓</span>
+            <div>
+              <strong>Maior encabeçamento com menos exigências e desperdícios</strong>
+              <span>Mais animais por hectare, com uso mais eficiente dos recursos</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
 
 </body>
 </html>
