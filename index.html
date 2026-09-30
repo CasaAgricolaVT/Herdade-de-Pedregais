@@ -60,10 +60,24 @@
 
     h1 {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(1.8rem, 5vw, 3rem);
-      line-height: 1.1;
+      line-height: 1.05;
       margin: 0;
       color: var(--verde);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .15rem;
+    }
+
+    h1 .intro {
+      font-size: clamp(1.3rem, 3vw, 1.8rem);
+      font-weight: 400;
+    }
+
+    h1 .herdade {
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      font-weight: 700;
+      color: var(--ocre);
     }
 
     .logo {
@@ -214,8 +228,10 @@
       >
     </div>
 
-    <h1>Bem-vindos à 
-      Herdade de Pedregais</h1>
+    <h1>
+      <span class="intro">Bem-vindos à</span>
+      <span class="herdade">Herdade de Pedregais</span>
+    </h1>
   </header>
 
   <main>
