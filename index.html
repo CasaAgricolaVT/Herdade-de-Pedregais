@@ -58,7 +58,7 @@
     color: var(--verde);
   }
   .logo {
-    width: 130px;
+    width: 80px;
     aspect-ratio: 204 / 131;
     flex: none;
   }
@@ -133,6 +133,8 @@
     object-fit: cover;
     border-radius: 2px;
   }
+  .imagem.ok { border: 0; padding: 0; }
+  .imagem.ok span { display: none; }
   .logo.imagem { aspect-ratio: 204 / 131; padding: .25rem; font-size: .7rem; }
   .logo.imagem img { object-fit: contain; }
 </style>
@@ -144,7 +146,7 @@
   <!-- Logótipo: colocar em images/logo.png -->
   <div class="logo imagem">
     <span>images/logo.png</span>
-    <img src="images/logo.png" alt="Logótipo" onerror="this.remove()">
+    <img src="images/logo.png" alt="Logótipo" onload="this.parentNode.classList.add('ok')" onerror="this.remove()">
   </div>
 </header>
 
@@ -153,7 +155,7 @@
     <!-- Imagem: colocar em images/pedregais-2014.png -->
     <figure class="imagem">
       <span>images/pedregais-2014.png</span>
-      <img src="images/pedregais-2014.png" alt="Mapa da Herdade de Pedregais em 2014" onerror="this.remove()">
+      <img src="images/pedregais-2014.png" alt="Mapa da Herdade de Pedregais em 2014" onload="this.parentNode.classList.add('ok')" onerror="this.remove()">
     </figure>
     <div>
       <h2>2014</h2>
@@ -188,7 +190,7 @@
     <!-- Imagem: colocar em images/pedregais-2026.png -->
     <figure class="imagem">
       <span>images/pedregais-2026.png</span>
-      <img src="images/pedregais-2026.png" alt="Mapa da Herdade de Pedregais em 2026" onerror="this.remove()">
+      <img src="images/pedregais-2026.png" alt="Mapa da Herdade de Pedregais em 2026" onload="this.parentNode.classList.add('ok')" onerror="this.remove()">
     </figure>
     <div>
       <h2>2026</h2>
